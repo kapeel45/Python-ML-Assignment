@@ -9,6 +9,10 @@ print("a Address is ::", id(a))
 print("b Type is ::", type(b))
 print("b Address is ::", id(b))
 
+print(id(a), id(b))   # same id
+print("Check Addresses :: ",a is b)         # True
+print("Check Value :: ", a == b)         # True
+
 # While, list is mutable object, so when you create two separate lists with the same value, they are stored in different memory locations.
 a = [10]
 b = [10]
@@ -18,3 +22,7 @@ print("a Address is ::", id(a))
 
 print("b Type is ::", type(b))
 print("b Address is ::", id(b))
+
+print(id(a), id(b))   # often different
+print("Check Addresses :: ",a is b)         # often False
+print("Check Value :: ", a == b)         # True
