@@ -9,7 +9,7 @@ def Grades(marks):
         print("Second Class")
     elif marks < 50:
         print("Fail")
-    else:
+    else: 
         print("Enter Valid Number")
 
 def main():
